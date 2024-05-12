@@ -28,3 +28,7 @@ run the server
 ```cmd
 ng serve
 ```
+
+```npm
+npm install --legacy-peer-deps
+```
