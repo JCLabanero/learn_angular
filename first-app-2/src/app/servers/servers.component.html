@@ -16,9 +16,9 @@ class="form-control"
 
 <p>{{ serverCreationStatus }}</p>
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">
-  Add Server
+  Create Server
 </button>
 <button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
 
 <!-- <p [innerText]="allowNewServer">{{ allowNewServer }}</p> -->
