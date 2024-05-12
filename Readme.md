@@ -33,6 +33,6 @@ ng serve
 npm install --legacy-peer-deps
 ```
 
-```npm
+```cmd
 ng generate component SERVER
 ```
