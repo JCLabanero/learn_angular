@@ -36,3 +36,5 @@ npm install --legacy-peer-deps
 ```cmd
 ng generate component SERVER
 ```
+
+![Databinding](images\databinding.png)
