@@ -34,7 +34,15 @@ npm install --legacy-peer-deps
 ```
 
 ```cmd
-ng generate component SERVER
+ng generate component NAME
+```
+
+```cmd
+ng generate component NAME --spec false
+```
+
+```cmd
+ng generate component folder/Name --skip-tests true
 ```
 
 ![Databinding](images\databinding.png)
