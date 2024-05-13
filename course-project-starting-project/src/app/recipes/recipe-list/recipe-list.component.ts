@@ -13,5 +13,10 @@ export class RecipeListComponent {
       'The content',
       'https://marketplace.canva.com/EAEzSj77_B4/2/0/1067w/canva-beige-cute-recipe-card-xDHAiGpfgKU.jpg'
     ),
+    new Recipe(
+      'Test Recipe',
+      'The content',
+      'https://marketplace.canva.com/EAEzSj77_B4/2/0/1067w/canva-beige-cute-recipe-card-xDHAiGpfgKU.jpg'
+    ),
   ];
 }
