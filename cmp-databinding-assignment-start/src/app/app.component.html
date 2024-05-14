@@ -31,10 +31,16 @@
       </ol>
     </div>
   </div>
+  <app-game-control
+    (intervalFired)="onIntervalFired($event)"
+  ></app-game-control>
   <div class="row">
     <div class="col-md-12">
-      <button class="btn btn-primary">Start</button>
-      <button class="btn btn-danger">Stop</button>
+      <app-odd *ngFor="let oddNum of oddNumbers" [number]="oddNum"></app-odd>
+      <app-even
+        *ngFor="let evenNum of evenNumbers"
+        [number]="evenNum"
+      ></app-even>
     </div>
   </div>
 </div>
