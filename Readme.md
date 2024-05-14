@@ -42,7 +42,11 @@ ng generate component NAME --spec false
 ```
 
 ```cmd
-ng generate component folder/Name --skip-tests true
+ng generate component folder/NAME --skip-tests true
+```
+
+```cmd
+ng g d NAME
 ```
 
 ![Databinding](images\databinding.png)
