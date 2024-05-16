@@ -13,10 +13,10 @@ import { AuthService } from './auth-service';
 export class AuthGuard implements CanActivate, CanActivateChild {
   constructor(private authService: AuthService, private router: Router) {}
   canActivateChild(
-    childRoute: ActivatedRouteSnapshot,
+    route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): boolean | Observable<boolean> | Promise<boolean> {
-    return this.canActivate(childRoute, state);
+    return this.canActivate(route, state);
   }
   canActivate(
     route: ActivatedRouteSnapshot,
@@ -27,7 +27,7 @@ export class AuthGuard implements CanActivate, CanActivateChild {
         return true;
       } else {
         this.router.navigate(['/']);
-        return false;
+        // return false;
       }
     });
   }
